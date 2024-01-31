@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhà thuốc Thanh Bình</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="grid wide">
+          <!-- header navbar -->
+          <nav class="header__navbar hide-on-mobile-tablet">
+            <ul class="header__navbar-list">
+              <li
+                class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate"
+              >
+                Trung tâm nhà thuốc Thanh Bình
+              </li>
+              <li class="header__navbar-item">
+                <span class="header__navbar-title--no-pointer"> Kết nối</span>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header_navbar-icon fab fa-facebook"></i>
+                </a>
+                <a href="" class="header__navbar-icon-link">
+                  <i class="header_navbar-icon fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__navbar-list">
+              <li class="header__navbar-item header__navbar-item--has-notify">
+                <a href="" class="header__navbar-item-link">
+                  <i class="header_navbar-icon far fa-bell"></i>
+                  Thông báo
+                </a>
+              </li>
+              <li class="header__navbar-item">
+                <span class="header__navbar-title--no-pointer">
+                  Tư vấn ngay:
+                </span>
+                <a
+                  href=""
+                  class="header__navbar-item-link header__navbar-item-phone"
+                  >0123456789</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- header with search -->
+          <div class="header-with-search">
+            <label for="mobile-bars-checkbox" class="header__mobile-search header-categories">
+              <i class="header__mobile-search-icon fas fa-bars"></i>
+            </label>
+            <!-- logo -->
+            <div class="header__logo hide-on-tablet">
+              <a href="/" class="header__logo-link">
+                <img
+                  src="./assets/img/heath-check.png"
+                  alt="Logo"
+                  class="header__logo-img"
+                />
+              </a>
+            </div>
+            <input
+              type="checkbox"
+              id="mobile-search-checkbox"
+              hidden
+              class="header__search-checkbox"
+            />
+            <!-- search -->
+            <div class="header__search">
+              <div class="header__search-input-wrap">
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Nhập để tìm kiếm sản phẩm"
+                />
+                <!-- search history -->
+                <div class="header__search-history">
+                  <h3 class="header__search-history-heading">
+                    Lịch sử tìm kiếm
+                  </h3>
+                  <ul class="header__search-history-list">
+                    <li class="header__search-history-item">
+                      <a href="">Kem dưỡng da</a>
+                    </li>
+                    <li class="header__search-history-item">
+                      <a href="">Kem trị muộn</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="header__search-btn">
+                <i class="header__search-btn-icon fas fa-search"></i>
+              </button>
+            </div>
+            <!-- cart -->
+            <div class="mobile-search-rightbox">
+              <label for="mobile-search-checkbox" class="header__mobile-search">
+                <i class="header__mobile-search-icon fas fa-search"></i>
+              </label>
+              <div class="header__cart">
+                <div class="header__cart-wrap">
+                  <i class="header__cart-icon fas fa-shopping-cart"></i>
+                  <span class="header__cart-notice">3</span>
+                  <!-- no cart use => header__cart-list--no-cart-->
+                  <div class="header__cart-list">
+                    <img
+                      src="./assets/img/cart.png"
+                      alt=""
+                      class="header__cart-no-cart-img"
+                    />
+                    <span class="header__cart-list-no-cart-msg">
+                      Chưa có sản phẩm
+                    </span>
+
+                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                    <ul class="header__cart-list-item">
+                      <!-- cart item -->
+                      <li class="header__cart-item">
+                        <img
+                          src="./assets/img/70b57cb035651fee90c99bce11304d4d_tn.jfif"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bộ kêm đặc trị vùng mắt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >2.000.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-quantity">2</span>
+                            </div>
+                          </div>
+
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                              Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove">Xoá</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="./assets/img/70b57cb035651fee90c99bce11304d4d_tn.jfif"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bộ kêm đặc trị vùng mắt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >2.000.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-quantity">2</span>
+                            </div>
+                          </div>
+
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                              Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove">Xoá</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="./assets/img/70b57cb035651fee90c99bce11304d4d_tn.jfif"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bộ kêm đặc trị vùng mắt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >2.000.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-quantity">2</span>
+                            </div>
+                          </div>
+
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                              Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove">Xoá</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="./assets/img/70b57cb035651fee90c99bce11304d4d_tn.jfif"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bộ kêm đặc trị vùng mắt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >2.000.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-quantity">2</span>
+                            </div>
+                          </div>
+
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                              Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove">Xoá</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="./assets/img/70b57cb035651fee90c99bce11304d4d_tn.jfif"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bộ kêm đặc trị vùng mắt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >2.000.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-quantity">2</span>
+                            </div>
+                          </div>
+
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                              Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove">Xoá</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="header__cart-item">
+                        <img
+                          src="./assets/img/70b57cb035651fee90c99bce11304d4d_tn.jfif"
+                          alt=""
+                          class="header__cart-img"
+                        />
+                        <div class="header__cart-item-info">
+                          <div class="header__cart-item-head">
+                            <h5 class="header__cart-item-name">
+                              Bộ kêm đặc trị vùng mắt
+                            </h5>
+                            <div class="header__cart-item-price-wrap">
+                              <span class="header__cart-item-price"
+                                >2.000.000đ</span
+                              >
+                              <span class="header__cart-item-multiply">x</span>
+                              <span class="header__cart-item-quantity">2</span>
+                            </div>
+                          </div>
+
+                          <div class="header__cart-item-body">
+                            <span class="header__cart-item-description">
+                              Phân loại: Bạc
+                            </span>
+                            <span class="header__cart-item-remove">Xoá</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <a href="" class="header__cart-view-cart btn btn--primary"
+                      >Xem giỏ hàng</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="app__container">
+        <div class="content">
+          <div class="grid wide">
+            <nav class="category">
+              <ul class="category__list">
+                <li class="category-item category-item--active">
+                  <a href="" class="category-item__link">
+                    Thực phẩm chức năng
+                  </a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link"> Dược mỹ phẩm </a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link"> Bệnh </a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link"> Thiết bị y tế </a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link"> Tiêm chủng </a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link"> Chăm sóc cá nhân </a>
+                </li>
+                <li class="category-item">
+                  <a href="" class="category-item__link"> Thuốc </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="product-content">
+            <div class="grid wide products-heading">
+              <ul class="list-heading">
+                <li class="list-heading-item">
+                  <a href="" class="list-heading-item__link">Trang chủ</a>
+                  <span class="list-heading-item__separation">/</span>
+                </li>
+                <li class="list-heading-item">
+                  <a href="" class="list-heading-item__link"
+                    >Thực phẩm chức năng</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-intro">
+              <div class="grid wide">
+                <h2 class="product-intro__heading">Hỗ trợ điều trị</h2>
+                <div class="row sm-gutter">
+                  <div class="col l-3 m-4 c-6">
+                    <div class="product-intro-item">
+                      <img
+                        src="./assets/img/thuoc5.jpg"
+                        alt=""
+                        class="product-intro-item__img"
+                      />
+                      <div class="product-intro-item__info">
+                        <span class="product-intro-item__text"
+                          >Cơ xương khớp</span
+                        >
+                        <span class="product-intro-item__quality"
+                          >44 sản phầm</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-3 m-4 c-6">
+                    <div class="product-intro-item">
+                      <img
+                        src="./assets/img/thuoc5.jpg"
+                        alt=""
+                        class="product-intro-item__img"
+                      />
+                      <div class="product-intro-item__info">
+                        <span class="product-intro-item__text"
+                          >Cơ xương khớp</span
+                        >
+                        <span class="product-intro-item__quality"
+                          >44 sản phầm</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-3 m-4 c-6">
+                    <div class="product-intro-item">
+                      <img
+                        src="./assets/img/thuoc5.jpg"
+                        alt=""
+                        class="product-intro-item__img"
+                      />
+                      <div class="product-intro-item__info">
+                        <span class="product-intro-item__text"
+                          >Cơ xương khớp</span
+                        >
+                        <span class="product-intro-item__quality"
+                          >44 sản phầm</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-3 m-4 c-6">
+                    <div class="product-intro-item">
+                      <img
+                        src="./assets/img/thuoc5.jpg"
+                        alt=""
+                        class="product-intro-item__img"
+                      />
+                      <div class="product-intro-item__info">
+                        <span class="product-intro-item__text"
+                          >Cơ xương khớp</span
+                        >
+                        <span class="product-intro-item__quality"
+                          >44 sản phầm</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-3 m-4 c-6">
+                    <div class="product-intro-item">
+                      <img
+                        src="./assets/img/thuoc5.jpg"
+                        alt=""
+                        class="product-intro-item__img"
+                      />
+                      <div class="product-intro-item__info">
+                        <span class="product-intro-item__text"
+                          >Cơ xương khớp</span
+                        >
+                        <span class="product-intro-item__quality"
+                          >44 sản phầm</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col l-3 m-4 c-6">
+                    <div class="product-intro-item">
+                      <img
+                        src="./assets/img/thuoc5.jpg"
+                        alt=""
+                        class="product-intro-item__img"
+                      />
+                      <div class="product-intro-item__info">
+                        <span class="product-intro-item__text"
+                          >Cơ xương khớp</span
+                        >
+                        <span class="product-intro-item__quality"
+                          >44 sản phầm</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid wide">
+              <div class="row">
+                <div class="col l-12 m-12 c-12">
+                  <div class="product-filter hide-on-mobile-tablet">
+                    <div class="product-filter__heading">
+                      Danh sách sản phẩm
+                    </div>
+                    <div class="product-option">
+                      <span class="product-filter__lable">Sắp xếp theo</span>
+                      <button class="product-filter__btn btn no-active">
+                        Phổ biến
+                      </button>
+                      <button class="product-filter__btn btn btn--primary">
+                        Mới nhất
+                      </button>
+                      <button class="product-filter__btn btn no-active">
+                        Bán chạy
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-list">
+                <div class="row sm-gutter">
+                  <div class="col l-2-4 m-4 c-6">
+                    <a class="home-selling-item" href="">
+                      <div class="home-selling-item__img"></div>
+                      <h4 class="home-selling-item__name">
+                        Ví clutch cầm tay thời trang da mềm cao cấp YUUMY YV36
+                      </h4>
+                      <div class="home-selling-item__price">
+                        <span class="home-selling-item__price-current">
+                          999.000đ
+                        </span>
+                      </div>
+                      <div class="home-selling-item__origin">
+                        <div class="home-selling-item__box">
+                          <span>Hộp 60 viên</span>
+                        </div>
+                      </div>
+                      <div class="home-product-item__content">
+                        Dạng bào chế: Viên nang cứng Thành phần: Canxi từ vỏ sò
+                        1680mg, Chất xơ hòa tan
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <a class="home-selling-item" href="">
+                      <div class="home-selling-item__img"></div>
+                      <h4 class="home-selling-item__name">
+                        Ví clutch cầm tay thời trang da mềm cao cấp YUUMY YV36
+                      </h4>
+                      <div class="home-selling-item__price">
+                        <span class="home-selling-item__price-current">
+                          999.000đ
+                        </span>
+                      </div>
+                      <div class="home-selling-item__origin">
+                        <div class="home-selling-item__box">
+                          <span>Hộp 60 viên</span>
+                        </div>
+                      </div>
+                      <div class="home-product-item__content">
+                        Dạng bào chế: Viên nang cứng Thành phần: Canxi từ vỏ sò
+                        1680mg, Chất xơ hòa tan
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <a class="home-selling-item" href="">
+                      <div class="home-selling-item__img"></div>
+                      <h4 class="home-selling-item__name">
+                        Ví clutch cầm tay thời trang da mềm cao cấp YUUMY YV36
+                      </h4>
+                      <div class="home-selling-item__price">
+                        <span class="home-selling-item__price-current">
+                          999.000đ
+                        </span>
+                      </div>
+                      <div class="home-selling-item__origin">
+                        <div class="home-selling-item__box">
+                          <span>Hộp 60 viên</span>
+                        </div>
+                      </div>
+                      <div class="home-product-item__content">
+                        Dạng bào chế: Viên nang cứng Thành phần: Canxi từ vỏ sò
+                        1680mg, Chất xơ hòa tan
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <a class="home-selling-item" href="">
+                      <div class="home-selling-item__img"></div>
+                      <h4 class="home-selling-item__name">
+                        Ví clutch cầm tay thời trang da mềm cao cấp YUUMY YV36
+                      </h4>
+                      <div class="home-selling-item__price">
+                        <span class="home-selling-item__price-current">
+                          999.000đ
+                        </span>
+                      </div>
+                      <div class="home-selling-item__origin">
+                        <div class="home-selling-item__box">
+                          <span>Hộp 60 viên</span>
+                        </div>
+                      </div>
+                      <div class="home-product-item__content">
+                        Dạng bào chế: Viên nang cứng Thành phần: Canxi từ vỏ sò
+                        1680mg, Chất xơ hòa tan
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <a class="home-selling-item" href="">
+                      <div class="home-selling-item__img"></div>
+                      <h4 class="home-selling-item__name">
+                        Ví clutch cầm tay thời trang da mềm cao cấp YUUMY YV36
+                      </h4>
+                      <div class="home-selling-item__price">
+                        <span class="home-selling-item__price-current">
+                          999.000đ
+                        </span>
+                      </div>
+                      <div class="home-selling-item__origin">
+                        <div class="home-selling-item__box">
+                          <span>Hộp 60 viên</span>
+                        </div>
+                      </div>
+                      <div class="home-product-item__content">
+                        Dạng bào chế: Viên nang cứng Thành phần: Canxi từ vỏ sò
+                        1680mg, Chất xơ hòa tan
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col l-2-4 m-4 c-6">
+                    <a class="home-selling-item" href="">
+                      <div class="home-selling-item__img"></div>
+                      <h4 class="home-selling-item__name">
+                        Ví clutch cầm tay thời trang da mềm cao cấp YUUMY YV36
+                      </h4>
+                      <div class="home-selling-item__price">
+                        <span class="home-selling-item__price-current">
+                          999.000đ
+                        </span>
+                      </div>
+                      <div class="home-selling-item__origin">
+                        <div class="home-selling-item__box">
+                          <span>Hộp 60 viên</span>
+                        </div>
+                      </div>
+                      <div class="home-product-item__content">
+                        Dạng bào chế: Viên nang cứng Thành phần: Canxi từ vỏ sò
+                        1680mg, Chất xơ hòa tan
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-pagination">
+              <div class="grid wide">
+                <ul class="pagination home-product__pagination">
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link">
+                      <i class="pagination-item__icon fas fa-angle-left"></i>
+                    </a>
+                  </li>
+                  <li class="pagination-item pagination-item--active">
+                    <a href="" class="pagination-item__link"> 1 </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link"> 2 </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link"> 3 </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link"> 4 </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link"> 5 </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link"> ... </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link"> 14 </a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-item__link">
+                      <i class="pagination-item__icon fas fa-angle-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="grid wide footer__content">
+          <div class="row">
+            <div class="col l-2-4 m-4 c-6">
+              <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">Shop Mail</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-4 c-6">
+              <h3 class="footer__heading">Giới thiệu</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">Giới thiệu</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">Tuyển dụng</a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">Điều khoản</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-4 c-6">
+              <h3 class="footer__heading">Danh mục</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-item__link"> Trang điểm mặt </a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link"> Trang điểm mắt </a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link"> Trang điểm môi </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-4 c-6">
+              <h3 class="footer__heading">Theo dõi</h3>
+              <ul class="footer-list">
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">
+                    <i class="footer-item__icon fab fa-facebook"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">
+                    <i class="footer-item__icon fab fa-instagram"></i>
+                    Instagram
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="" class="footer-item__link">
+                    <i class="footer-item__icon fab fa-linkedin"></i>
+                    Linkedin
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col l-2-4 m-8 c-12">
+              <h3 class="footer__heading">Hỗ trợ thanh toán</h3>
+              <div class="footer__pay">
+                <a href="" class="footer__pay-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="37"
+                    height="20"
+                    viewBox="0 0 37 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.9049 9.01856C27.4076 9.01856 29.431 7.00265 29.431 4.50928C29.431 2.01591 27.4076 0 24.9049 0C22.4023 0 20.3789 2.01591 20.3789 4.50928C20.3789 7.00265 22.4023 9.01856 24.9049 9.01856ZM24.9049 2.58886C25.9699 2.58886 26.8325 3.44827 26.8325 4.50928C26.8325 5.57029 25.9699 6.4297 24.9049 6.4297C23.84 6.4297 22.9774 5.57029 22.9774 4.50928C22.9774 3.44827 23.84 2.58886 24.9049 2.58886Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M24.9049 10.9708C22.4023 10.9708 20.3789 12.9867 20.3789 15.4801C20.3789 17.9735 22.4023 19.9894 24.9049 19.9894C27.4076 19.9894 29.431 17.9735 29.431 15.4801C29.431 12.9867 27.4076 10.9708 24.9049 10.9708ZM24.9049 17.4005C23.84 17.4005 22.9774 16.5411 22.9774 15.4801C22.9774 14.4191 23.84 13.5597 24.9049 13.5597C25.9699 13.5597 26.8325 14.4191 26.8325 15.4801C26.8325 16.5411 25.9699 17.4005 24.9049 17.4005Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.6831 10.9708C14.9163 10.9708 14.2134 11.2255 13.649 11.6499C13.0846 11.2255 12.3711 10.9708 11.615 10.9708C9.74065 10.9708 8.21777 12.4881 8.21777 14.3554V20H10.8163V14.3236C10.8163 13.8992 11.157 13.5597 11.583 13.5597C12.009 13.5597 12.3498 13.8992 12.3498 14.3236V19.9894H14.9483V14.3236C14.9483 13.8992 15.289 13.5597 15.715 13.5597C16.141 13.5597 16.4818 13.8992 16.4818 14.3236V19.9894H19.0696V14.3448C19.0696 12.4881 17.5574 10.9708 15.6831 10.9708Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.682 0C14.9152 0 14.2124 0.254642 13.648 0.679045C13.0835 0.254642 12.37 0 11.6139 0C9.72893 0 8.20605 1.51724 8.20605 3.38461V9.01856H10.8045V3.35278C10.8045 2.92838 11.1453 2.58886 11.5713 2.58886C11.9973 2.58886 12.3381 2.92838 12.3381 3.35278V9.01856H14.9365V3.35278C14.9365 2.92838 15.2773 2.58886 15.7033 2.58886C16.1293 2.58886 16.4701 2.92838 16.4701 3.35278V9.01856H19.0686V3.38461C19.0686 1.51724 17.5563 0 15.682 0Z"
+                      fill="#A50064"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="footer__pay-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="37"
+                    height="20"
+                    viewBox="0 0 37 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.9049 9.01856C27.4076 9.01856 29.431 7.00265 29.431 4.50928C29.431 2.01591 27.4076 0 24.9049 0C22.4023 0 20.3789 2.01591 20.3789 4.50928C20.3789 7.00265 22.4023 9.01856 24.9049 9.01856ZM24.9049 2.58886C25.9699 2.58886 26.8325 3.44827 26.8325 4.50928C26.8325 5.57029 25.9699 6.4297 24.9049 6.4297C23.84 6.4297 22.9774 5.57029 22.9774 4.50928C22.9774 3.44827 23.84 2.58886 24.9049 2.58886Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M24.9049 10.9708C22.4023 10.9708 20.3789 12.9867 20.3789 15.4801C20.3789 17.9735 22.4023 19.9894 24.9049 19.9894C27.4076 19.9894 29.431 17.9735 29.431 15.4801C29.431 12.9867 27.4076 10.9708 24.9049 10.9708ZM24.9049 17.4005C23.84 17.4005 22.9774 16.5411 22.9774 15.4801C22.9774 14.4191 23.84 13.5597 24.9049 13.5597C25.9699 13.5597 26.8325 14.4191 26.8325 15.4801C26.8325 16.5411 25.9699 17.4005 24.9049 17.4005Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.6831 10.9708C14.9163 10.9708 14.2134 11.2255 13.649 11.6499C13.0846 11.2255 12.3711 10.9708 11.615 10.9708C9.74065 10.9708 8.21777 12.4881 8.21777 14.3554V20H10.8163V14.3236C10.8163 13.8992 11.157 13.5597 11.583 13.5597C12.009 13.5597 12.3498 13.8992 12.3498 14.3236V19.9894H14.9483V14.3236C14.9483 13.8992 15.289 13.5597 15.715 13.5597C16.141 13.5597 16.4818 13.8992 16.4818 14.3236V19.9894H19.0696V14.3448C19.0696 12.4881 17.5574 10.9708 15.6831 10.9708Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.682 0C14.9152 0 14.2124 0.254642 13.648 0.679045C13.0835 0.254642 12.37 0 11.6139 0C9.72893 0 8.20605 1.51724 8.20605 3.38461V9.01856H10.8045V3.35278C10.8045 2.92838 11.1453 2.58886 11.5713 2.58886C11.9973 2.58886 12.3381 2.92838 12.3381 3.35278V9.01856H14.9365V3.35278C14.9365 2.92838 15.2773 2.58886 15.7033 2.58886C16.1293 2.58886 16.4701 2.92838 16.4701 3.35278V9.01856H19.0686V3.38461C19.0686 1.51724 17.5563 0 15.682 0Z"
+                      fill="#A50064"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="footer__pay-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="37"
+                    height="20"
+                    viewBox="0 0 37 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.9049 9.01856C27.4076 9.01856 29.431 7.00265 29.431 4.50928C29.431 2.01591 27.4076 0 24.9049 0C22.4023 0 20.3789 2.01591 20.3789 4.50928C20.3789 7.00265 22.4023 9.01856 24.9049 9.01856ZM24.9049 2.58886C25.9699 2.58886 26.8325 3.44827 26.8325 4.50928C26.8325 5.57029 25.9699 6.4297 24.9049 6.4297C23.84 6.4297 22.9774 5.57029 22.9774 4.50928C22.9774 3.44827 23.84 2.58886 24.9049 2.58886Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M24.9049 10.9708C22.4023 10.9708 20.3789 12.9867 20.3789 15.4801C20.3789 17.9735 22.4023 19.9894 24.9049 19.9894C27.4076 19.9894 29.431 17.9735 29.431 15.4801C29.431 12.9867 27.4076 10.9708 24.9049 10.9708ZM24.9049 17.4005C23.84 17.4005 22.9774 16.5411 22.9774 15.4801C22.9774 14.4191 23.84 13.5597 24.9049 13.5597C25.9699 13.5597 26.8325 14.4191 26.8325 15.4801C26.8325 16.5411 25.9699 17.4005 24.9049 17.4005Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.6831 10.9708C14.9163 10.9708 14.2134 11.2255 13.649 11.6499C13.0846 11.2255 12.3711 10.9708 11.615 10.9708C9.74065 10.9708 8.21777 12.4881 8.21777 14.3554V20H10.8163V14.3236C10.8163 13.8992 11.157 13.5597 11.583 13.5597C12.009 13.5597 12.3498 13.8992 12.3498 14.3236V19.9894H14.9483V14.3236C14.9483 13.8992 15.289 13.5597 15.715 13.5597C16.141 13.5597 16.4818 13.8992 16.4818 14.3236V19.9894H19.0696V14.3448C19.0696 12.4881 17.5574 10.9708 15.6831 10.9708Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.682 0C14.9152 0 14.2124 0.254642 13.648 0.679045C13.0835 0.254642 12.37 0 11.6139 0C9.72893 0 8.20605 1.51724 8.20605 3.38461V9.01856H10.8045V3.35278C10.8045 2.92838 11.1453 2.58886 11.5713 2.58886C11.9973 2.58886 12.3381 2.92838 12.3381 3.35278V9.01856H14.9365V3.35278C14.9365 2.92838 15.2773 2.58886 15.7033 2.58886C16.1293 2.58886 16.4701 2.92838 16.4701 3.35278V9.01856H19.0686V3.38461C19.0686 1.51724 17.5563 0 15.682 0Z"
+                      fill="#A50064"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="footer__pay-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="37"
+                    height="20"
+                    viewBox="0 0 37 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.9049 9.01856C27.4076 9.01856 29.431 7.00265 29.431 4.50928C29.431 2.01591 27.4076 0 24.9049 0C22.4023 0 20.3789 2.01591 20.3789 4.50928C20.3789 7.00265 22.4023 9.01856 24.9049 9.01856ZM24.9049 2.58886C25.9699 2.58886 26.8325 3.44827 26.8325 4.50928C26.8325 5.57029 25.9699 6.4297 24.9049 6.4297C23.84 6.4297 22.9774 5.57029 22.9774 4.50928C22.9774 3.44827 23.84 2.58886 24.9049 2.58886Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M24.9049 10.9708C22.4023 10.9708 20.3789 12.9867 20.3789 15.4801C20.3789 17.9735 22.4023 19.9894 24.9049 19.9894C27.4076 19.9894 29.431 17.9735 29.431 15.4801C29.431 12.9867 27.4076 10.9708 24.9049 10.9708ZM24.9049 17.4005C23.84 17.4005 22.9774 16.5411 22.9774 15.4801C22.9774 14.4191 23.84 13.5597 24.9049 13.5597C25.9699 13.5597 26.8325 14.4191 26.8325 15.4801C26.8325 16.5411 25.9699 17.4005 24.9049 17.4005Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.6831 10.9708C14.9163 10.9708 14.2134 11.2255 13.649 11.6499C13.0846 11.2255 12.3711 10.9708 11.615 10.9708C9.74065 10.9708 8.21777 12.4881 8.21777 14.3554V20H10.8163V14.3236C10.8163 13.8992 11.157 13.5597 11.583 13.5597C12.009 13.5597 12.3498 13.8992 12.3498 14.3236V19.9894H14.9483V14.3236C14.9483 13.8992 15.289 13.5597 15.715 13.5597C16.141 13.5597 16.4818 13.8992 16.4818 14.3236V19.9894H19.0696V14.3448C19.0696 12.4881 17.5574 10.9708 15.6831 10.9708Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.682 0C14.9152 0 14.2124 0.254642 13.648 0.679045C13.0835 0.254642 12.37 0 11.6139 0C9.72893 0 8.20605 1.51724 8.20605 3.38461V9.01856H10.8045V3.35278C10.8045 2.92838 11.1453 2.58886 11.5713 2.58886C11.9973 2.58886 12.3381 2.92838 12.3381 3.35278V9.01856H14.9365V3.35278C14.9365 2.92838 15.2773 2.58886 15.7033 2.58886C16.1293 2.58886 16.4701 2.92838 16.4701 3.35278V9.01856H19.0686V3.38461C19.0686 1.51724 17.5563 0 15.682 0Z"
+                      fill="#A50064"
+                    />
+                  </svg>
+                </a>
+                <a href="" class="footer__pay-link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="37"
+                    height="20"
+                    viewBox="0 0 37 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M24.9049 9.01856C27.4076 9.01856 29.431 7.00265 29.431 4.50928C29.431 2.01591 27.4076 0 24.9049 0C22.4023 0 20.3789 2.01591 20.3789 4.50928C20.3789 7.00265 22.4023 9.01856 24.9049 9.01856ZM24.9049 2.58886C25.9699 2.58886 26.8325 3.44827 26.8325 4.50928C26.8325 5.57029 25.9699 6.4297 24.9049 6.4297C23.84 6.4297 22.9774 5.57029 22.9774 4.50928C22.9774 3.44827 23.84 2.58886 24.9049 2.58886Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M24.9049 10.9708C22.4023 10.9708 20.3789 12.9867 20.3789 15.4801C20.3789 17.9735 22.4023 19.9894 24.9049 19.9894C27.4076 19.9894 29.431 17.9735 29.431 15.4801C29.431 12.9867 27.4076 10.9708 24.9049 10.9708ZM24.9049 17.4005C23.84 17.4005 22.9774 16.5411 22.9774 15.4801C22.9774 14.4191 23.84 13.5597 24.9049 13.5597C25.9699 13.5597 26.8325 14.4191 26.8325 15.4801C26.8325 16.5411 25.9699 17.4005 24.9049 17.4005Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.6831 10.9708C14.9163 10.9708 14.2134 11.2255 13.649 11.6499C13.0846 11.2255 12.3711 10.9708 11.615 10.9708C9.74065 10.9708 8.21777 12.4881 8.21777 14.3554V20H10.8163V14.3236C10.8163 13.8992 11.157 13.5597 11.583 13.5597C12.009 13.5597 12.3498 13.8992 12.3498 14.3236V19.9894H14.9483V14.3236C14.9483 13.8992 15.289 13.5597 15.715 13.5597C16.141 13.5597 16.4818 13.8992 16.4818 14.3236V19.9894H19.0696V14.3448C19.0696 12.4881 17.5574 10.9708 15.6831 10.9708Z"
+                      fill="#A50064"
+                    />
+                    <path
+                      d="M15.682 0C14.9152 0 14.2124 0.254642 13.648 0.679045C13.0835 0.254642 12.37 0 11.6139 0C9.72893 0 8.20605 1.51724 8.20605 3.38461V9.01856H10.8045V3.35278C10.8045 2.92838 11.1453 2.58886 11.5713 2.58886C11.9973 2.58886 12.3381 2.92838 12.3381 3.35278V9.01856H14.9365V3.35278C14.9365 2.92838 15.2773 2.58886 15.7033 2.58886C16.1293 2.58886 16.4701 2.92838 16.4701 3.35278V9.01856H19.0686V3.38461C19.0686 1.51724 17.5563 0 15.682 0Z"
+                      fill="#A50064"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="grid wide">
+            <p class="footer__text">
+              © 2023 - Bản quyền thuộc về nhà thuốc Thanh Bình
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <input type="checkbox" id="mobile-bars-checkbox" />
+    <label for="mobile-bars-checkbox" class="nav__overlay"></label>
+    <div class="header__navbar__mobile">
+      <ul class="category__list__mobile">
+        <li class="category-item-mobile category-item--active">
+          <a href="" class="category-item-mobile__link">
+            Thực phẩm chức năng
+          </a>
+        </li>
+        <li class="category-item-mobile">
+          <a href="" class="category-item-mobile__link"> Dược mỹ phẩm </a>
+        </li>
+        <li class="category-item-mobile">
+          <a href="" class="category-item-mobile__link"> Bệnh </a>
+        </li>
+        <li class="category-item-mobile">
+          <a href="" class="category-item-mobile__link"> Thiết bị y tế </a>
+        </li>
+        <li class="category-item-mobile">
+          <a href="" class="category-item-mobile__link"> Tiêm chủng </a>
+        </li>
+        <li class="category-item-mobile">
+          <a href="" class="category-item-mobile__link"> Chăm sóc cá nhân </a>
+        </li>
+        <li class="category-item-mobile">
+          <a href="" class="category-item-mobile__link"> Thuốc </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
